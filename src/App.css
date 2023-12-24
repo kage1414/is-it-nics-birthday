@@ -9,11 +9,10 @@
 }
 
 .nics-face {
-  -webkit-animation: myOrbit 1s linear infinite; /* Chrome, Safari 5 */
-  -moz-animation: myOrbit 1s linear infinite; /* Firefox 5-15 */
-  -o-animation: myOrbit 1s linear infinite; /* Opera 12+ */
-  animation: myOrbit 1s linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */
+  -webkit-animation: myOrbit 1.5s linear infinite;
+  -moz-animation: myOrbit 1.5s linear infinite;
+  -o-animation: myOrbit 1.5s linear infinite;
+  animation: myOrbit 1.5s linear infinite;
 }
 
 @-webkit-keyframes myOrbit {
@@ -49,5 +48,41 @@
   }
   to {
     transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotatay {
+  from {
+    -webkit-transform: rotate(0deg) translateX(0px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(0px) rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotatay {
+  from {
+    -moz-transform: rotate(0deg) translateX(0px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateX(0px) rotate(360deg);
+  }
+}
+
+@-o-keyframes rotatay {
+  from {
+    -o-transform: rotate(0deg) translateX(0px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateX(0px) rotate(360deg);
+  }
+}
+
+@keyframes rotatay {
+  from {
+    transform: rotate(0deg) translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(0px) rotate(360deg);
   }
 }

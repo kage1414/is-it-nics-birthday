@@ -19,10 +19,11 @@ export const NicsFace = ({ mouseCoordinates }: Props) => {
 
   const height = screenWidth / 6.3 > 120 ? 120 : screenWidth / 6.3;
 
+  const rotationSpeed = ((screenWidth - mouseCoordinates[0]) / 230) * 0.5;
+
   return (
-    <img
+    <span
       className="nics-face"
-      src="nics-face.png"
       style={{
         position: "absolute",
         top: mouseCoordinates[0] - height / 2,
@@ -30,6 +31,16 @@ export const NicsFace = ({ mouseCoordinates }: Props) => {
         zIndex: -1,
         height,
       }}
-    />
+    >
+      <img
+        style={{
+          MozAnimation: `rotatay ${rotationSpeed}s linear infinite`,
+          WebkitAnimation: `rotatay ${rotationSpeed}s linear infinite`,
+          OAnimation: `rotatay ${rotationSpeed}s linear infinite`,
+          animation: `rotatay ${rotationSpeed}s linear infinite`,
+        }}
+        src="nics-face.png"
+      />
+    </span>
   );
 };
