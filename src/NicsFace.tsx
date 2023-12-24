@@ -7,9 +7,13 @@ interface Props {
 
 export const NicsFace = ({ mouseCoordinates }: Props) => {
   const [screenWidth, setScreenWidth] = useState(getWindowDimensions().width);
+  const [screenHeight, setScreenHeight] = useState(
+    getWindowDimensions().height
+  );
 
   const handleResize = useCallback(() => {
     setScreenWidth(getWindowDimensions().width);
+    setScreenHeight(getWindowDimensions().height);
   }, []);
 
   useEffect(() => {
@@ -19,7 +23,9 @@ export const NicsFace = ({ mouseCoordinates }: Props) => {
 
   const height = screenWidth / 6.3 > 120 ? 120 : screenWidth / 6.3;
 
-  const rotationSpeed = ((screenWidth - mouseCoordinates[0]) / 230) * 0.5;
+  const rotationSpeed = (screenHeight - mouseCoordinates[0]) / 230;
+
+  console.log(rotationSpeed);
 
   return (
     <span
