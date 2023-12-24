@@ -9,7 +9,7 @@ import { getWindowDimensions } from "./utils";
 function App() {
   const initDimensions = getWindowDimensions();
   const [mouseCoordinates, setMouseCoordinates] = useState([
-    initDimensions.height / 2,
+    (initDimensions.height / 5) * 2,
     initDimensions.width / 2,
   ]);
   const nicsBirthday = moment("12-27", "MM-DD");
