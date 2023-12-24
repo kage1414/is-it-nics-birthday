@@ -2,8 +2,52 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  cursor: url("nics-face.png"), auto;
+  /* cursor: url("nics-face.png"), auto; */
   height: 100vh;
   width: 100vw;
-  cursor: none;
+  /* cursor: none; */
+}
+
+.nics-face {
+  -webkit-animation: myOrbit 1s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit 1s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit 1s linear infinite; /* Opera 12+ */
+  animation: myOrbit 1s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@-moz-keyframes myOrbit {
+  from {
+    -moz-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@-o-keyframes myOrbit {
+  from {
+    -o-transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes myOrbit {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
 }

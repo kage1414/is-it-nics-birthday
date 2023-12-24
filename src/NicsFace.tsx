@@ -4,6 +4,7 @@ interface Props {
 
 export const NicsFace = ({ mouseCoordinates }: Props) => (
   <img
+    className="nics-face"
     src="nics-face.png"
     style={{
       position: "absolute",

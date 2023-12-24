@@ -4,9 +4,14 @@ import { Yes } from "./Yes";
 import { No } from "./No";
 import { useState } from "react";
 import { NicsFace } from "./NicsFace";
+import { getWindowDimensions } from "./utils";
 
 function App() {
-  const [mouseCoordinates, setMouseCoordinates] = useState([209, 684]);
+  const initDimensions = getWindowDimensions();
+  const [mouseCoordinates, setMouseCoordinates] = useState([
+    initDimensions.height / 2,
+    initDimensions.width / 2,
+  ]);
   const nicsBirthday = moment("12-27", "MM-DD");
   const today = moment();
 
