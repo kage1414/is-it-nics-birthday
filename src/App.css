@@ -1,0 +1,9 @@
+#root {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: url("nics-face.png"), auto;
+  height: 100vh;
+  width: 100vw;
+  cursor: none;
+}
