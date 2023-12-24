@@ -17,7 +17,7 @@ export const NicsFace = ({ mouseCoordinates }: Props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, [handleResize]);
 
-  const height = screenWidth / 6.3;
+  const height = screenWidth / 6.3 > 120 ? 120 : screenWidth / 6.3;
 
   return (
     <img
