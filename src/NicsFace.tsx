@@ -17,16 +17,18 @@ export const NicsFace = ({ mouseCoordinates }: Props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, [handleResize]);
 
+  const height = screenWidth / 6.3;
+
   return (
     <img
       className="nics-face"
       src="nics-face.png"
       style={{
         position: "absolute",
-        top: mouseCoordinates[0] - 40,
-        left: mouseCoordinates[1] - 40,
+        top: mouseCoordinates[0] - height / 2,
+        left: mouseCoordinates[1] - height / 2,
         zIndex: -1,
-        height: screenWidth / 6.3,
+        height,
       }}
     />
   );
