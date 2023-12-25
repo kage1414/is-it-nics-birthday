@@ -59,7 +59,7 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
             ref.style.animationPlayState = clicked ? "running" : "paused";
           }
         }}
-        src="/src/assets/nics-face.png"
+        src="/nics-face.png"
       />
       <img
         style={getImageStyles({
@@ -71,7 +71,7 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
             ref.style.animationPlayState = clicked ? "running" : "paused";
           }
         }}
-        src="/src/assets/nic-smirking.png"
+        src="/nic-smirking.png"
       />
       <img
         style={getImageStyles({
@@ -83,7 +83,7 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
             ref.style.animationPlayState = clicked ? "running" : "paused";
           }
         }}
-        src="/src/assets/nic-staring.png"
+        src="/nic-staring.png"
       />
     </span>
   );
