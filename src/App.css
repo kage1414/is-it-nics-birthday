@@ -2,47 +2,47 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  cursor: url("./assets/nic-playing-piano.png") 4 12, auto;
   height: 100vh;
   width: 100vw;
   max-height: 100vh;
   max-width: 100vw;
-  /* cursor: none; */
+  cursor: none;
+  overflow: "hidden";
 }
 
 @-webkit-keyframes medOrbit {
   from {
-    -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    -webkit-transform: rotate(0deg) translateX(175px) rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    -webkit-transform: rotate(360deg) translateX(175px) rotate(-360deg);
   }
 }
 
 @-moz-keyframes medOrbit {
   from {
-    -moz-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    -moz-transform: rotate(0deg) translateX(175px) rotate(0deg);
   }
   to {
-    -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translateX(175px) rotate(-360deg);
   }
 }
 
 @-o-keyframes medOrbit {
   from {
-    -o-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    -o-transform: rotate(0deg) translateX(175px) rotate(0deg);
   }
   to {
-    -o-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    -o-transform: rotate(360deg) translateX(175px) rotate(-360deg);
   }
 }
 
 @keyframes medOrbit {
   from {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
+    transform: rotate(0deg) translateX(175px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    transform: rotate(360deg) translateX(175px) rotate(-360deg);
   }
 }
 
@@ -120,36 +120,36 @@
 
 @-webkit-keyframes rotatay {
   from {
-    -webkit-transform: rotate(0deg) translateX(0px) rotate(0deg);
+    -webkit-transform: rotate(360deg) translateX(0px) rotate(630deg);
   }
   to {
-    -webkit-transform: rotate(360deg) translateX(0px) rotate(360deg);
+    -webkit-transform: rotate(0deg) translateX(0px) rotate(0deg);
   }
 }
 
 @-moz-keyframes rotatay {
   from {
-    -moz-transform: rotate(0deg) translateX(0px) rotate(0deg);
+    -moz-transform: rotate(360deg) translateX(0px) rotate(360deg);
   }
   to {
-    -moz-transform: rotate(360deg) translateX(0px) rotate(360deg);
+    -moz-transform: rotate(0deg) translateX(0px) rotate(0deg);
   }
 }
 
 @-o-keyframes rotatay {
   from {
-    -o-transform: rotate(0deg) translateX(0px) rotate(0deg);
+    -o-transform: rotate(360deg) translateX(0px) rotate(360deg);
   }
   to {
-    -o-transform: rotate(360deg) translateX(0px) rotate(360deg);
+    -o-transform: rotate(0deg) translateX(0px) rotate(0deg);
   }
 }
 
 @keyframes rotatay {
   from {
-    transform: rotate(0deg) translateX(0px) rotate(0deg);
+    transform: rotate(360deg) translateX(0px) rotate(360deg);
   }
   to {
-    transform: rotate(360deg) translateX(0px) rotate(360deg);
+    transform: rotate(0deg) translateX(0px) rotate(0deg);
   }
 }
