@@ -8,6 +8,7 @@ import { getWindowDimensions } from "./utils";
 
 function App() {
   const initDimensions = getWindowDimensions();
+  const [clicked, setClicked] = useState(true);
   const [mouseCoordinates, setMouseCoordinates] = useState([
     (initDimensions.height / 5) * 2,
     initDimensions.width / 2,
@@ -21,12 +22,20 @@ function App() {
     setMouseCoordinates([e.pageY, e.pageX]);
   };
 
+  const onClick: React.MouseEventHandler<HTMLDivElement> = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <>
-      <div onMouseMove={onMouseMove} style={{ height: "95%", width: "95%" }}>
+      <div
+        onMouseMove={onMouseMove}
+        onClick={onClick}
+        style={{ height: "95%", width: "95%" }}
+      >
         {isItNicsBirthday ? <Yes /> : <No />}
       </div>
-      <NicsFace mouseCoordinates={mouseCoordinates} />
+      <NicsFace mouseCoordinates={mouseCoordinates} clicked={clicked} />
     </>
   );
 }
