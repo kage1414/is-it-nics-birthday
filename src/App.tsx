@@ -13,7 +13,7 @@ function App() {
     (initDimensions.height / 5) * 2,
     initDimensions.width / 2,
   ]);
-  const nicsBirthday = moment("12-24", "MM-DD");
+  const nicsBirthday = moment("12-27", "MM-DD");
   const today = moment();
 
   const isItNicsBirthday = today.dayOfYear() === nicsBirthday.dayOfYear();
