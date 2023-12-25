@@ -110,7 +110,7 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
               ref.style.animationPlayState = clicked ? "running" : "paused";
             }
           }}
-          src="/nic-playing-piano.png"
+          src="/nic-playing-piano-large.png"
         />
       </span>
     </>
