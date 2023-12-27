@@ -31,11 +31,16 @@ function App() {
       <div
         onMouseMove={onMouseMove}
         onClick={onClick}
-        style={{ height: "95%", width: "95%" }}
+        style={{
+          height: "95%",
+          width: "95%",
+        }}
       >
         {isItNicsBirthday ? <Yes /> : <No />}
       </div>
-      <NicsFace mouseCoordinates={mouseCoordinates} clicked={clicked} />
+      {isItNicsBirthday && (
+        <NicsFace mouseCoordinates={mouseCoordinates} clicked={clicked} />
+      )}
     </>
   );
 }

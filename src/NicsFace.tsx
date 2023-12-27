@@ -43,8 +43,8 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
       <span
         style={{
           position: "absolute",
-          top: "0px",
-          left: "0px",
+          top: "20px",
+          left: "-25px",
           transform: `translate(${mouseCoordinates[1] - 40}px, ${
             mouseCoordinates[0] - 40
           }px)`,
@@ -92,8 +92,8 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
       <span
         style={{
           position: "absolute",
-          top: "0px",
-          left: "0px",
+          top: "20px",
+          left: "-25px",
           transform: `translate(${mouseCoordinates[1] + 10}px, ${
             mouseCoordinates[0] - 40
           }px)`,
