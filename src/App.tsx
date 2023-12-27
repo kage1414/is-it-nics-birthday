@@ -39,7 +39,11 @@ function App() {
         {isItNicsBirthday ? <Yes /> : <No />}
       </div>
       {isItNicsBirthday && (
-        <NicsFace mouseCoordinates={mouseCoordinates} clicked={clicked} />
+        <NicsFace
+          mouseCoordinates={mouseCoordinates}
+          clicked={clicked}
+          onClick={onClick}
+        />
       )}
     </>
   );

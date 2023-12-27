@@ -1,11 +1,12 @@
-import { useCallback, useState } from "react";
+import { MouseEventHandler, useCallback, useState } from "react";
 
 interface Props {
   mouseCoordinates: number[];
   clicked: boolean;
+  onClick: MouseEventHandler<HTMLDivElement>;
 }
 
-export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
+export const NicsFace = ({ mouseCoordinates, clicked, onClick }: Props) => {
   const [speedAlteration, setSpeedAlteration] = useState(1);
 
   window.document.body.onkeydown = (e) => {
@@ -99,6 +100,7 @@ export const NicsFace = ({ mouseCoordinates, clicked }: Props) => {
           }px)`,
           transition: "0ms",
         }}
+        onClick={onClick}
       >
         <img
           style={getImageStyles({
